@@ -1,0 +1,205 @@
+@charset "UTF=8";
+@font-face {
+    font-family: "RubikMonoOne";
+    src: url(fontes/RubikMonoOne-Regular.ttf);
+}
+@font-face {
+    font-family: "KodeMono";
+    src: url(fontes/KodeMono-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+    --cor0:#4B9EF0;
+    --cor1:#5E92C5;
+    --cor2:#647F9B;
+    --cor3:#5B6670;
+    --cor4:#394046;
+    --cor5:#212A33;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: linear-gradient(90deg, var(--cor4), var(--cor5), var(--cor4));
+    font-family: "KodeMono";
+}
+header {
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor3));
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+}
+div#cabeca {
+    display: inline-block;
+    width: 50vw;
+    min-width: 475px;
+    max-width: 700px;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor5);
+    border-radius: 0 0 3em 0;
+    box-shadow: 3px 2px 6px #212a3388;
+}
+#eu {
+    height: 200px;
+    width: 188px;
+    background-image: url(img/fernando.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+#nome {
+    color: rgb(32, 32, 32);
+    font: 1em "RubikMonoOne", sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    bottom: 90px;
+}
+#cima {
+    color: black;
+    background-color: azure;
+    border: 1px solid var(--cor5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+    border-radius: 5px 0 0 5px;
+    padding: 0 3px 0 3px;
+    position: fixed;
+    right: 0px;
+    bottom: 42px;
+    text-decoration: none;
+}
+#contato {
+    font-size: large;
+    color: black;
+    background-color: var(--cor0);
+    border: 1px solid var(--cor5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 5px;
+    text-decoration: none;
+}
+nav#opc {
+    width: 180px;
+    height: 150px;
+    position:static;
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 50px;
+}
+div.op {
+    position: relative;
+    bottom: 45px;
+    background-color: var(--cor0);
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 1em;
+    border: 2px solid var(--cor5);
+    box-shadow: 3px 3px 3px #212a338e;
+}
+div.op > a {
+    text-decoration: none;
+    color: black;
+}
+div.op:hover, #contato:hover, .op > a:hover {
+    transition: 0.2s;
+    color: azure;
+    background-color: #4f81b3;
+}
+#dev {
+    position: relative;
+    color: azure;
+    display: inline-block;
+    padding: 8px 3px 8px 3px;
+    margin: 120px 0 0 10px;
+    bottom: 90px;
+    background-color: var(--cor4);
+    border-radius: 1em;
+    border: 2px solid var(--cor5);
+    box-shadow: 3px 3px 3px #212a338e;
+}
+.folha {
+    font-size: x-large;
+    background-color: azure;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px solid rgb(22, 23, 29);
+    box-shadow: 3px 3px 3px rgba(32, 32, 32, 0.514);
+    min-width: 450px;
+    width: 60vw;
+}
+.in {
+    color: azure;
+    font-family: "RubikMonoOne";
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    bottom: 45px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.514);
+}
+.hab {
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(22, 23, 29);
+    box-shadow: 3px 3px 3px rgba(32, 32, 32, 0.514);
+}
+.cinz {
+    background-color: var(--cor4);
+}
+.ocu {
+    display: none;
+    background-color: azure;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px solid rgb(22, 23, 29);
+    box-shadow: 3px 3px 3px rgba(32, 32, 32, 0.514);
+}
+#ho:hover > #h{
+    display: block;
+}
+#proj {
+    text-align: center;
+}
+#proj > p {
+    font-size: .8em;
+}
+.proj {
+    background-color: var(--cor5);
+    background-image: url("img/soon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    display: inline-block;
+    min-height: 180px;
+    min-width: 250px;
+    width: 25vw;
+    height: 20vh;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px rgba(32, 32, 32, 0.514);
+}
+.proj:hover {
+    background-size: 60% 60%;
+}
+abbr {
+    text-decoration: none;
+}
+footer {
+    background-color: var(--cor5);
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+}
+address > a {
+    margin: 20px;
+    color: azure;
+    text-decoration: none;
+}
